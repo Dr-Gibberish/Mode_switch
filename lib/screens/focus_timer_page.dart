@@ -1,4 +1,4 @@
-// lib/screens/focus_timer_page.dart
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
@@ -43,7 +43,6 @@ class FocusTimerPage extends StatelessWidget {
                           color: Theme.of(context).textTheme.bodyLarge?.color,
                         ),
                         onPressed: () {
-                          // Add settings navigation
                         },
                       ),
                     ],
