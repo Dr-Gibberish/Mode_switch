@@ -1,7 +1,7 @@
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/theme_provider.dart';
+import 'settings_page.dart';  
 
 class FocusTimerPage extends StatelessWidget {
   const FocusTimerPage({super.key});
@@ -43,6 +43,12 @@ class FocusTimerPage extends StatelessWidget {
                           color: Theme.of(context).textTheme.bodyLarge?.color,
                         ),
                         onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const SettingsPage(),
+                            ),
+                          );
                         },
                       ),
                     ],
